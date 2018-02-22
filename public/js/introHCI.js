@@ -11,6 +11,8 @@ $(document).ready(function() {
 function initializePage() {
 	// your code here
 	$(".likeBtn").click(function(){
+		ga('create','UA-114623091-1','auto');
 		ga('send', 'event', 'like', 'click');
+		ga('send','pageview');
 	});
 }
